@@ -1,0 +1,289 @@
+body{
+    font-family: 'Inter', sans-serif !important;
+    align-items: center;
+}
+.brnd{
+    font-family: 'Inknut Antiqua', serif;
+}
+.banerimg{
+    width: 100%;
+    height: 75%;
+}
+.abtpara{
+    padding:0 5% ;
+   text-align: center;
+}
+.qute{
+    padding:0 5%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+.whycho{
+    padding: 5%;
+}
+.abtwhyus{
+    text-align: center;
+}
+.whyustit{
+    font-size: 30px;
+    font-weight: 600;
+}
+.whyimgcnt{
+    height: 400px;
+    width: 100%;
+}
+.hme{
+    overflow: hidden;
+}
+.txt-style {
+    font-size: 90px;
+    font-weight: bolder;
+    line-height: 120px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url('./assests/bkgrd.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.bnrsp{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    font-size: 40px;
+    color:rgb(255, 255, 255) ;
+    font-weight: 600;
+}
+.underlll::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background: #b41f1f;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+
+}
+.sertit{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 30px;
+}
+.carousel-item{
+    height: 300px;
+    width: 100%;
+}
+.underlll:hover::after{
+    transform: scale(1,1);
+    
+}
+.navtt{
+    padding: 0 0 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    
+}
+.logo1{
+    width: 70px;
+    height: 70px;
+}
+.abll:hover{
+    color: black;
+    opacity: 1;
+    
+}
+.nav-link{
+    color: black !important;
+}
+.abll{
+    position: relative;
+}
+.faqsec{
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .faqsec h6{
+    font-size: 18px !important;
+  }
+  .faq{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+  }
+  .ques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ans{
+    transition: max-height 1.4s ease;
+  }
+  .faq .ans{
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .faq.active .ans {
+    max-height: 300px;
+  }
+  
+  .faq.active i{
+    transform: rotate(180deg);
+  }
+  .faq i{
+    transition: transform 0.5s ease-in;
+  }
+  .faqsec h2{
+    margin: 20px 0 30px ;;
+  }
+  .contactsec{
+    width: 100%;
+    padding: 20px auto;
+   text-align: center;
+  }
+  .contactsec h3{
+    text-align: center;
+    margin: 25px 0;
+  }
+  .contactsec h6{
+    margin-bottom: 20px;
+  }
+  .contactsec .cnt{
+    text-align: center;
+  }
+  .ttimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .itm{
+   
+    text-align: center;
+  }
+  .itm p{
+    text-align: justify;
+  }
+
+  .testimonials{
+    padding: 2%;
+    background-color: rgb(212, 227, 222);
+  }     
+  .orgitem img{
+    margin: 15px 0;
+  }
+  .orgitem h6{
+    color: rgb(77, 77, 214);
+  }
+  .txth1{
+    text-align: center;
+    border-bottom: 2px black;
+  }
+  .orgitem{
+    /* margin: 2px; */
+    background-color: white;
+    padding: 0 10%;
+    border: 10px solid rgb(212, 227, 222);
+  }
+  .orgitem:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border: none;
+  }
+
+  .ovral{
+    position: relative;
+    object-fit: contain;
+    
+    border: 10px solid white;
+  }
+  .service{
+    padding: 0 5%;
+  }
+  .serimg{
+    width: 100%;
+    height: 300px;
+  }
+  .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(41, 34, 34, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .content:hover{
+    opacity: 1;
+  }
+  .content > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  .content:hover > *{
+    transform: translateY(0px);
+    
+  }
+  .contactsec{
+    background-color: rgb(212, 227, 222);
+  }
+  .content  p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    text-align: center;
+    
+  }
+  .abtxp{
+    text-align: center;
+    align-items: center;
+  }
+  .num{
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+  .abtxp p{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .abtovr{
+    background-color: rgb(212, 227, 222);
+    padding: 20px 0 20px 0;
+   }
+.abttit{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 30px;
+
+}
+.media p{
+    margin: 0 !important;
+    padding-bottom:5px ;
+}
+.frmov{
+    text-align: left;
+    margin: 10% 10%;
+}
